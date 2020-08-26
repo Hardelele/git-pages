@@ -1,5 +1,5 @@
 let homeButton = document.getElementById('homePage');
-let friendsBlock = document.getElementById('friends');
+let friendsBlock = document.getElementsByClassName('friends')[0];
 
 chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.executeScript(tabs[0].id, {code: 'chrome.storage.sync.set({username: window.document.getElementsByClassName("user-profile-link")[0].getElementsByClassName("css-truncate-target")[0].innerHTML});'});

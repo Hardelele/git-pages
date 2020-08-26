@@ -1,0 +1,92 @@
+* {
+    display: flex;
+}
+
+body {
+    flex-direction: column;
+}
+
+.profile {
+    margin: 6px auto;
+    align-items: center;
+}
+
+button {
+    margin: 4px;
+    outline: none;
+    background: none;
+    border: none;
+    font-family: "Roboto Light", sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #3895ff;
+}
+
+#homePage {
+    border: 1px solid #292929;
+    background: #ffffff;
+    color: #292929;
+    border-radius: 6px;
+    transition: all 200ms ease;
+}
+
+#homePage:hover {
+    border: 1px solid #292929;
+    background: #292929;
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.friends div {
+    position: fixed;
+    transform: translateY(-16px);
+    width: 160px;
+    background: #fbfbfb;
+    border-bottom: 1px solid #9b9b9b;
+}
+
+.friends {
+    height: 200px;
+    width: 180px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-direction: column;
+    border: 1px solid #f0f0f0;
+    background: #fbfbfb;
+    padding: 16px 6px 6px;
+}
+
+.friends button {
+    font-size: 12px;
+    align-items: center;
+    transition: all 500ms ease;
+    color: #373737;
+}
+
+.friends button::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: black;
+    border-radius: 50%;
+    margin-right: 4px;
+    transition: all 200ms ease;
+}
+
+.friends button:hover {
+    color: #3895ff;
+}
+
+.friends button:hover::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: none;
+    border-radius: 0;
+    margin-right: 4px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    transform: rotate(45deg);
+}
